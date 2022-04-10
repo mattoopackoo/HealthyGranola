@@ -49,6 +49,8 @@ GridLayout:
             height: '48dp'
             on_press:
                 root.capture()
+                app.root.ids['screen_manager'].transition.direction = 'left'
+                app.root.ids['screen_manager'].current = 'check_screen'
 
 
 <CheckScreen>:
